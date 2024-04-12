@@ -5,8 +5,12 @@ houses some web3 funtimes
 
 1. **Containerization**: Utilize the specified container from the Phylax documentation.
 2. **Resource Isolation**: Set resource limits for each container to manage resource allocation and ensure equitable distribution.
+- see helmchart values.yaml resources 
 3. **Network Isolation**: Ensure containers are segregated from one another and the host, with access restricted to API endpoints.
+- through namespaces 
+- through network policies
 4. **API Access**: Facilitate secure API endpoint access for containers using unique API tokens for users.
+-
 5. **Internet Access**: Provide internet connectivity for containers to support external application requirements.
 6. **Cloud Agnostic**: Ensure the deployment is adaptable to various cloud environments or on-premises setups using IaC principles.
 7. **Documentation**: Offer detailed documentation covering design choices, deployment steps, and essential configurations or instructions.
