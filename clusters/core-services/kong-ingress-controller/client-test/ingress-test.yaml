@@ -1,20 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ include "phylax.fullname" . }}
+  name: kong-ingress-walt-test
   annotations:
     konghq.com/strip-path: "true"
     konghq.com/plugins: "apikey-auth"  # Ensure this plugin is properly configured
-    konghq.com/path: "/expected-path-after-rewrite"
 spec:
   ingressClassName: kong
   rules:
   - http:
       paths:
-      - path: /{{ include "phylax.fullname" . }} # Update this line
+      - path: /
         pathType: Prefix  # Use Prefix to match any sub-path under '/'
         backend:
           service:
-            name: {{ include "phylax.fullname" . }}
+            name: walt-test-go-phylax
             port:
               number: 8000

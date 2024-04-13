@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: consumer1-auth
+  labels:
+    konghq.com/credential: key-auth
+type: Opaque
+stringData:
+  key: password
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: consumer1
+  annotations:
+      kubernetes.io/ingress.class: kong
+username: consumer1
+credentials:
+- consumer1-auth

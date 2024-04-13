@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-specified-pod-routing
+spec:
+  podSelector:
+    matchLabels:
+      app: {{ include "phylax.fullname" . }}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          access: granted
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          access: granted
+--- 
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-kong-to-app
+spec:
+  podSelector:
+    matchLabels:
+      app: {{ include "phylax.fullname" . }}
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: kong  # Adjust this label according to your setup
