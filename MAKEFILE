@@ -1,3 +1,0 @@
-# make phylax
-# iac 
-# GitOps Bootstrap 

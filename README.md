@@ -9,19 +9,6 @@ kubeconfig access: https://drive.google.com/file/d/1mWkY860M-4nZz3dghbrbbNbmmhuI
 ### my thoughts 
 [My Thoughts in a diagram](https://app.excalidraw.com/s/9eRoxrUweDS/8tfhFCpqjAA)
 
-Phases of the workshop 
-
-1. phase 1 mvp 
-
-2. phase 2 refine 
-
-( will probably write this step out for time in the event i don't get time to implement over the next few days.)
-
-3. phase 3 next steps for post mvp 
-- advanced security 
-- global reliablity
-
-
 
 ### Diagram 
 
