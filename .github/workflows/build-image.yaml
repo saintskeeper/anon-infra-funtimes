@@ -25,6 +25,10 @@ jobs:
             dockerfile: Dockerfile
             context: .
             env: dev
+          - name: go-api-server-02
+            dockerfile: Dockerfile02
+            context: .
+            env: dev
 
     steps:
     - name: Checkout code

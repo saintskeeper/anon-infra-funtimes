@@ -14,9 +14,6 @@ spec:
         name: flux-system
         namespace: flux-system 
   values: 
-# Default values for phylax.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 
     replicaCount: 1
 
