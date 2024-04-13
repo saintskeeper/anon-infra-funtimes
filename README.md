@@ -1,6 +1,10 @@
 ## Deployment Instructions
 
-## Vidoe 
+## Video & cluster access
+video download: https://drive.google.com/file/d/15bWverCfSGDooJv_OXIk8pcfdXEW1dul/view?usp=sharing
+
+kubeconfig access: https://drive.google.com/file/d/1mWkY860M-4nZz3dghbrbbNbmmhuIjMg4/view?usp=drive_link
+
 
 ### my thoughts 
 [My Thoughts in a diagram](https://app.excalidraw.com/s/9eRoxrUweDS/8tfhFCpqjAA)
