@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: core-services
+  namespace: flux-system
+spec:
+  interval: 720m0s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  serviceAccountName: kustomize-controller
+  path: ./clusters/core-services
+  prune: false
+  timeout: 10m
